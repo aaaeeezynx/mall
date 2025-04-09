@@ -1,7 +1,7 @@
 <template>
     <div class="dark">
         <div class="header">
-            <el-dropdown v-for="s in sort" :key="s.id" class="dropdown">
+            <el-dropdown v-for="s in products" :key="s.id" class="dropdown">
                 <span class="el-dropdown-link" hover="false">
                     {{ s.name }}
                 </span>
@@ -19,47 +19,66 @@
 
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import { reactive } from "vue";
+import { reactive, ref, onMounted } from "vue";
+import axios from "axios";
 
+interface Product {
+    id: number;
+    name: string;
+    products: { id: number; name: string }[];
+    image: string;
+}
 
-const sort = reactive([
-    {
-        id: 1, name: "鍵盤",
-        products: [
-            { id: 1, name: "鍵盤1" },
-            { id: 2, name: "鍵盤2" },
-            { id: 3, name: "鍵盤3" },
-            { id: 4, name: "鍵盤4" },
-        ]
-    },
-    {
-        id: 2, name: "滑鼠",
-        products: [
-            { id: 1, name: "滑鼠1" },
-            { id: 2, name: "滑鼠2" },
-            { id: 3, name: "滑鼠3" },
-            { id: 4, name: "滑鼠4" },
-        ]
-    },
-    {
-        id: 3, name: "耳機",
-        products: [
-            { id: 1, name: "耳機1" },
-            { id: 2, name: "耳機2" },
-            { id: 3, name: "耳機3" },
-            { id: 4, name: "耳機4" },
-        ]
-    },
-    {
-        id: 4, name: "滑鼠墊",
-        products: [
-            { id: 1, name: "滑鼠墊1" },
-            { id: 2, name: "滑鼠墊2" },
-            { id: 3, name: "滑鼠墊3" },
-            { id: 4, name: "滑鼠墊4" },
-        ]
+const products = ref<Product[]>([])
+
+onMounted(async () => {
+    try {
+        const res = await axios.get('/keyboards.json')
+        console.log('載入成功:', res.data)
+        products.value = res.data
+    } catch (error) {
+        console.error('載入失敗:', error)
     }
-])
+})
+
+// const sort = reactive([
+//     {
+//         id: 1, name: "鍵盤",
+//         products: [
+//             { id: 1, name: "鍵盤1" },
+//             { id: 2, name: "鍵盤2" },
+//             { id: 3, name: "鍵盤3" },
+//             { id: 4, name: "鍵盤4" },
+//         ]
+//     },
+//     {
+//         id: 2, name: "滑鼠",
+//         products: [
+//             { id: 1, name: "滑鼠1" },
+//             { id: 2, name: "滑鼠2" },
+//             { id: 3, name: "滑鼠3" },
+//             { id: 4, name: "滑鼠4" },
+//         ]
+//     },
+//     {
+//         id: 3, name: "耳機",
+//         products: [
+//             { id: 1, name: "耳機1" },
+//             { id: 2, name: "耳機2" },
+//             { id: 3, name: "耳機3" },
+//             { id: 4, name: "耳機4" },
+//         ]
+//     },
+//     {
+//         id: 4, name: "滑鼠墊",
+//         products: [
+//             { id: 1, name: "滑鼠墊1" },
+//             { id: 2, name: "滑鼠墊2" },
+//             { id: 3, name: "滑鼠墊3" },
+//             { id: 4, name: "滑鼠墊4" },
+//         ]
+//     }
+// ])
 
 // const products = reactive()
 </script>

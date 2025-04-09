@@ -10,7 +10,8 @@
             "● 最高配對 3 台裝置，裝置間輕鬆切換"
         ],
         "img":"@/assets/images/logetch ERGO k860.webp"
-    },{
+    },
+    {
         "id": 2,
         "name": "羅技 Logitech G PRO X TKL RAPID 磁性類比式鍵軸有線電競鍵盤",
         "price": 5990,
@@ -22,7 +23,8 @@
         ],
         "img":"@/assets/images/Logitech G PRO X TKL RAPID.webp"
         
-    },{
+    },
+    {
         "id": 3,
         "name": "羅技 Logitech G515 輕薄三模無線機械式 TKL 電競鍵盤 有線/2.4G/藍牙",
         "price": 3290,
@@ -32,7 +34,8 @@
             "● 自訂您的玩樂個性"
         ],
         "img":"@/assets/images/Logitech G515.webp"
-    },{
+    },
+    {
         "id": 4,
         "name": "羅技 Logitech MX Keys S Keyboard 無線智能鍵盤",
         "price": 3390,
