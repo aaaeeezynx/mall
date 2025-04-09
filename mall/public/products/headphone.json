@@ -1,35 +1,54 @@
-
 [
     {
         "id": 1,
-        "name": "鍵盤",
-        "products": [
-            { "id": 1, "name": "鍵盤1" },
-            { "id": 2, "name": "鍵盤2" },
-            { "id": 3, "name": "鍵盤3" },
-            { "id": 4, "name": "鍵盤4" }
-        ]
+        "name": "羅技 Logitech G PRO X 2 LIGHTSPEED 無線三模電競耳機麥克風 2.4G/藍牙/有線",
+        "price": 6490,
+        "feature": [
+            "● 50 公釐石墨烯單體",
+            "● LIGHTSPEED無線技術",
+            "● 配備柔軟耳墊與可旋轉耐用轉軸",
+            "● 多種連線方式選項"
+        ],
+        "img": "/images/Logitech G PRO X 2 LIGHTSPEED.webp"
     },
     {
         "id": 2,
-        "name": "滑鼠",
-        "products": [
-            { "id": 5, "name": "滑鼠1" },
-            { "id": 6, "name": "滑鼠2" }
-        ]
+        "name": "羅技 Logitech G735 美型 RGB 無線電競耳麥 2.4G/藍牙/3.5mm有線",
+        "price": 4990,
+        "feature": [
+            "● 按比例調整適合尺寸,重量更輕,頭帶舒適度高,佩戴尺寸範圍靈活",
+            "● 專門設計的耳罩可旋轉和替換,適合不同耳型",
+            "● 合併音訊 & 不被壓縮音訊,可同時連接到2個不同的設備",
+            "● 可拆卸耳墊和可拆卸式麥克風",
+            "● 柔和RGB照明",
+            "● RGB開啟時電池使用時間為16小時,RGB關閉時電池使用時間為56小時,通過USB-C快速充電",
+        ],
+        "img": "/images/Logitech G735.webp"
     },
     {
         "id": 3,
-        "name": "鼠墊",
-        "products": [
-            { "id": 7, "name": "鼠墊1" }
-        ]
+        "name": "羅技 Logitech G435 lightspeed 無線電競耳機麥克風 2.4G/藍牙",
+        "price": 1790,
+        "feature": [
+            "● 整體舒適性最佳化",
+            "● 內建雙波束成形麥克風",
+            "● 輕盈舒適的165公克重量",
+            "● 藍牙無線",
+            "● 長效電池使用",
+            "● 高保真音效"
+        ],
+        "img": "/images/Logitech G435 lightspeed.webp"
     },
     {
         "id": 4,
-        "name": "耳機",
-        "products": [
-            { "id": 8, "name": "耳機1" }
-        ]
+        "name": "羅技 Logitech G335 輕盈 有線電競耳機麥克風",
+        "price": 1490,
+        "feature": [
+            "● 240g輕盈舒適",
+            "● 40公釐釹磁鐵單體，提供清脆、清晰的立體聲",
+            "● 懸吊頭帶設計可分散重量並緩解壓力點",
+            "● 柔軟透氣的記憶泡棉耳墊"
+        ],
+        "img": "/images/Logitech G335.webp"
     }
 ]

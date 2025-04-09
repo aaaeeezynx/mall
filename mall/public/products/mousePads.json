@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "羅技 Logitech G 玩色大型滑鼠墊",
+        "price": 1190,
+        "feature": [
+            "● 電競玩色大型滑鼠墊"
+        ],
+        "img": "@/assets/images/Logitech G colors mousepad.webp"
+    },
+    {
+        "id": 2,
+        "name": "羅技 Logitech G240 布質 滑鼠墊",
+        "price": 390,
+        "feature": [
+            "● 經過精細調校的布質表面提供精確、一致的追蹤。橡膠底座讓滑鼠墊即使在激烈的遊戲過程中，也保持在定位。針對羅技 G 系列滑鼠進行最佳化處理的表面紋理，提供頂尖遊戲表現。"
+        ],
+        "img": "@/assets/images/Logitech G240 mousepad.webp"
+    },
+    {
+        "id": 3,
+        "name": "羅技 Logitech DESK MAT 布面桌面墊",
+        "price": 490,
+        "feature": [
+            "● 配備防潑濺塗層的柔軟布面以濕布擦拭，最多2分鐘即可輕鬆擦拭乾淨。",
+            "● 天然橡膠的止滑底座任何表面上都能有效防止滑動。",
+            "● 兼具美型與耐用特性內層使用 100% 回收聚酯纖維，平縫設計防止邊緣磨損，可有效防止桌墊起皺和收縮。"
+        ],
+        "img": "@/assets/images/Logitech DESK MAT mousepad.webp"
+    },
+    {
+        "id": 4,
+        "name": "羅技 Logitech G440 硬質 滑鼠墊",
+        "price": 899,
+        "feature": [
+            "● 低表面摩擦，克服慣性",
+            "● 一致的表面紋理",
+            "● 羅技G系列感應器的絕佳良配",
+            "● 穩定的橡膠底座",
+            "● 多層構造，複合強度"
+        ],
+        "img": "@/assets/images/Logitech G440 mousepad.webp"
+    }
+   
+]

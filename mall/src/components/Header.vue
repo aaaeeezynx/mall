@@ -33,7 +33,7 @@ const products = ref<Product[]>([])
 
 onMounted(async () => {
     try {
-        const res = await axios.get('/keyboards.json')
+        const res = await axios.get('/products/mousePads.json')
         console.log('載入成功:', res.data)
         products.value = res.data
     } catch (error) {
