@@ -1,0 +1,51 @@
+[{
+        "id": 1,
+        "name": "羅技 Logitech ERGO K860 人體工學商務無線鍵盤 藍芽",
+        "price": 3990,
+        "feature": [
+            "● 人體工學設計，減少壓力 、提高手腕支撐",
+            "● 弧形設計、三層手托，使輸入姿勢更自然舒適",
+            "● 可調整支架傾斜角度，在 0°、-4°、-7°間自由變換",
+            "● 雙重連線，支援藍牙及Unifying™ 技術",
+            "● 最高配對 3 台裝置，裝置間輕鬆切換"
+        ],
+        "img":"@/assets/images/logetch ERGO k860.webp"
+    },{
+        "id": 2,
+        "name": "羅技 Logitech G PRO X TKL RAPID 磁性類比式鍵軸有線電競鍵盤",
+        "price": 5990,
+        "feature": [
+            "● 類比磁軸，12層設計",
+            "● 提供穩固線性手感",
+            "● 極速觸發，精準操控",
+            "● G HUB自定義組合鍵"
+        ],
+        "img":"@/assets/images/Logitech G PRO X TKL RAPID.webp"
+        
+    },{
+        "id": 3,
+        "name": "羅技 Logitech G515 輕薄三模無線機械式 TKL 電競鍵盤 有線/2.4G/藍牙",
+        "price": 3290,
+        "feature": [    
+            "● 採用時尚、纖薄、無數字鍵台設計",
+            "● GL 機械按鍵軸",
+            "● 自訂您的玩樂個性"
+        ],
+        "img":"@/assets/images/Logitech G515.webp"
+    },{
+        "id": 4,
+        "name": "羅技 Logitech MX Keys S Keyboard 無線智能鍵盤",
+        "price": 3390,
+        "feature": [    
+            "● 可充電鋰電池 (1500 mAh)",
+            "● 使用預先定義的設定，完全充電最多可使用長達 10 天，背光關閉的情況下可使用長達 5 個月 1電池壽命視使用者及運算條件而異。",
+            "● Easy-Switch 按鍵可連線到最多三個裝置，按下按鈕就能在裝置間切換",
+            "● 可開啟背光的手部接近感應器",
+            "● 可調整背光亮度的環境光線感應器",
+            "● 可使用 USB-C 充電。完整充電後可持續使用 10 天，或在關閉背光情況下最高使用 5 個月 2電池壽命視使用者及運算條件而異。",
+            "● 相容於具備羅技 Flow 功能的滑鼠",
+            "● 10 公尺無線範圍"
+        ],
+        "img":"@/assets/images/Logitech MX Keys S Keyboard.webp"
+    }
+]

@@ -1,0 +1,42 @@
+[{
+        "id": 1,
+        "name": "羅技 Logitech M650 無線靜音滑鼠",
+        "price": 1090,
+        "feature": [
+            "● 保持一貫的高水準",
+            "● 升級產品使用體驗",
+            "● 以藍牙配對，或以隨附的Logi Bolt 接收器隨插即用。",
+            "● 自訂功能按鈕",
+            "● 下載 Logitech Options 軟體，為滑鼠側鍵自訂喜愛的快捷功能。"
+        ],
+        "img": "@/assets/images/Logitech M650.webp"
+    },{
+        "id": 2,
+        "name": "羅技 Logitech MX Master 3S 無線人體工學滑鼠 藍牙/2.4G",
+        "price": 3690,
+        "feature": [
+            "● 相容於多種作業系統",
+            "● 超高速 MAGSPEED 電磁滾輪",
+            "● 玻璃表面追蹤感應器"
+        ],
+        "img": "@/assets/images/Logitech MX Master 3S.webp"
+    },{
+        "id": 3,
+        "name": "Logitech 羅技 G502 X PLUS 炫光高效能 無線電競滑鼠 2.4G",
+        "price": 3990,
+        "feature": [
+            "● G502 X PLUS 是傳奇 G502 系列的最新成員。其經由我們首款的 LIGHTFORCE 複合式開關、LIGHTSPEED 專業等級無線技術、LIGHTSYNC RGB、HERO 25K 感應器等進行全新改造。"
+        ],
+        "img": "@/assets/images/G502 X PLUS.webp"
+    },{
+        "id": 4,
+        "name": "羅技 Logitech G Pro X SUPERLIGHT 2 LIGHTSPEED 無線輕量化電競滑鼠 2.4G",
+        "price": 5490,
+        "feature": [
+            "● LIGHTSPEED無線連接最長可使用達 95 小時電池壽命",
+            "● HERO 2感應器亞微米精確",
+            "● LIGHTFORCE 微動複合光學X 機械式"
+        ],
+        "img": "@/assets/images/Logitech G Pro X SUPERLIGHT 2 LIGHTSPEED.webp"
+    }
+]

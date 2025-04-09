@@ -33,8 +33,9 @@ import Footer from "./components/Footer.vue";
 
 <style lang="scss" scoped>
 .el-header {
-  height: 5vh;
-  background-color: #096cee;
+  height: 100%;
+  width: 100%;
+  background-color: #232526;
 }
 
 .el-main {
