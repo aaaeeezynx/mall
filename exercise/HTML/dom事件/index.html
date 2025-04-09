@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        <p class="container"></p>
+        <button id="btn">tap</button>
+    </div>
+
+    <script>
+        const cont=document.querySelector('.container')
+        const btn=document.getElementById('btn')
+        btn.onclick=function(){
+            console.log('tap')
+            cont.innerHTML="clicked"
+        }
+    </script>
+</body>
+</html>

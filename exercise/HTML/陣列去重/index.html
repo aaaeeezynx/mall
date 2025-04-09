@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建空Set
+const mySet = new Set();
+
+// 添加元素
+mySet.add(1);
+mySet.add("hello");
+mySet.add({name: "John"});
+mySet.add(1); // 重复值不会被添加
+
+// 从数组创建Set（自动去重）
+const arraySet = new Set([1, 2, 3, 1, 2]);
+console.log([arraySet]); // [1, 2, 3]
+
+// 检查元素是否存在
+console.log(mySet.has("hello")); // true
+
+// 删除元素
+mySet.delete("hello");
+
+// 获取大小
+console.log(mySet.size); // 2
+
+// 遍历Set
+for (const item of mySet) {
+  console.log(item);
+}
+
+// 转换回数组
+const array = [...mySet];
+console.log(mySet)
+    </script>
+</body>
+</html>

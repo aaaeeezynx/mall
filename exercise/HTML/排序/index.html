@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 初始化數組
+        const arr = [10, 5, 8, 7, 3, 2, 1];
+        // 外層循環控制比較的輪數
+        for (i = 0; i < arr.length - 1; i++) {
+            console.log("比較次數" + (i + 1))
+            // 內層循環控制每輪比較的次數
+            for (j = 0; j < arr.length - 1 - i; j++) {
+                // 如果前一個數大於後一個數，則交換它們的位置
+                if (arr[j] > arr[j + 1]) {
+                    const temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+                // 輸出每輪排序後的數組
+                console.log("每輪結果" + arr)
+            }
+            console.log("最終結果" + arr)
+        }
+    </script>
+</body>
+
+</html>
