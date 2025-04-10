@@ -24,7 +24,6 @@
 </template>
 
 <script setup lang="ts">
-import { RouterView } from "vue-router";
 import Home from "./views/Home.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";

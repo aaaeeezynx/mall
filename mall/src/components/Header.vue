@@ -2,7 +2,7 @@
     <div class="dark">
         <div class="header">
             <el-dropdown v-for="s in sort" :key="s.id" class="dropdown">
-                <span class="el-dropdown-link" hover="false">
+                <span class="el-dropdown-link" @click="goToProductList(s.type)">
                     {{ s.name }}
                 </span>
                 <template #dropdown>
@@ -20,71 +20,26 @@
 </template>
 
 <script setup lang="ts">
-import { RouterView } from "vue-router";
-import { reactive, ref, onMounted } from "vue";
-import axios from "axios";
+import { onMounted } from "vue";
+import { useRouter } from "vue-router";
+import { useProductStore } from '../stores/products';
 
-// 定義數據接口
-interface Sort {
-    id: number;
-    name: string;
-    type: string; // 新增 type 用於對應產品類型
-}
-interface Product {
-    id: number;
-    name: string;
-    price: number;
-    feature: string;
-    img: string;
-}
+const router = useRouter()
+const store = useProductStore();
+const sort = store.sort;
+const productMap = store.productMap;
 
-// 定義響應式數據
-const sort = ref<Sort[]>([]);
-const keyboard = ref<Product[]>([]);
-const headphone = ref<Product[]>([]);
-const mousePad = ref<Product[]>([]);
-const mouse = ref<Product[]>([]);
-
-// 產品數據映射
-const productMap = ref({
-    keyboard: keyboard.value,
-    mouse: mouse.value,
-    mousePad: mousePad.value,
-    headphone: headphone.value,
+onMounted(() => {
+    store.loadData();
 });
 
-// 加載數據
-onMounted(async () => {
-    try {
-        const sortRes = await axios.get('/products/sort.json');
-        const keyboardRes = await axios.get('/products/keyboard.json');
-        const headphoneRes = await axios.get('/products/headphone.json');
-        const mousePadRes = await axios.get('/products/mousePad.json');
-        const mouseRes = await axios.get('/products/mouse.json');
+const getItemsByType = (type: keyof typeof productMap) => {
+    return productMap[type] || [];
+};
 
-        sort.value = sortRes.data;
-        keyboard.value = keyboardRes.data;
-        headphone.value = headphoneRes.data;
-        mousePad.value = mousePadRes.data;
-        mouse.value = mouseRes.data;
-
-        // 更新 productMap
-        productMap.value = {
-            keyboard: keyboard.value,
-            mouse: mouse.value,
-            mousePad: mousePad.value,
-            headphone: headphone.value,
-        };
-
-        console.log('載入成功:', sort.value, productMap.value);
-    } catch (error) {
-        console.error('載入失敗:', error);
-    }
-});
-
-// 根據 type 返回對應的產品數據
-const getItemsByType = (type: keyof typeof productMap.value) => {
-    return productMap.value[type] || [];
+const goToProductList = (type: string) => {
+    router.push({ name: 'ProductList', params: { type } });
+    console.log('導航到產品列表:', type);
 };
 </script>
 
@@ -98,7 +53,6 @@ const getItemsByType = (type: keyof typeof productMap.value) => {
 }
 
 .dropdown {
-    padding: auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -107,21 +61,44 @@ const getItemsByType = (type: keyof typeof productMap.value) => {
     cursor: pointer;
 }
 
-.el-dropdown-link {
-    :hover {
-        color: none;
-    }
-}
-
 .dropdown-menu {
     width: 60vw;
     margin: 0 20vw;
 }
 
-.el-tooltip__trigger {
-    :hover {
-        background-color: none;
-        color: none;
-    }
+/* 移除 el-dropdown-link 的 hover 效果 */
+:deep(.el-dropdown-link) {
+    color: #d7d4d4;
+    /* 自訂顏色 */
+    padding: 8px;
+}
+
+:deep(.el-dropdown-link:hover) {
+    background-color: transparent;
+    /* 移除背景變化 */
+    border: none;
+    /* 移除邊框 */
+    color: #666;
+    /* hover 時的文字顏色 */
+}
+
+/* 修改下拉菜單的外觀 */
+:deep(.el-dropdown-menu) {
+    background-color: #333;
+    /* 自訂背景色，例如深灰色 */
+    border: 1px solid #555;
+    /* 自訂邊框顏色 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    /* 自訂陰影 */
+}
+
+/* 移除下拉菜單項的 hover 白色效果 */
+:deep(.el-dropdown-menu__item:hover) {
+    background-color: #444;
+    /* hover 時的背景色 */
+    color: #fff;
+    /* hover 時的文字顏色 */
+    border: none;
+    /* 移除邊框 */
 }
 </style>
