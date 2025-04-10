@@ -1,14 +1,16 @@
 <template>
     <div class="dark">
         <div class="header">
-            <el-dropdown v-for="s in products" :key="s.id" class="dropdown">
+            <el-dropdown v-for="s in sort" :key="s.id" class="dropdown">
                 <span class="el-dropdown-link" hover="false">
                     {{ s.name }}
                 </span>
                 <template #dropdown>
                     <el-dropdown-menu class="dropdown-menu">
-                        <el-dropdown-item class="dropdown-item" v-for="p in s.products" :key="p.id">
-                            {{ p.name }}
+                        <el-dropdown-item class="dropdown-item"
+                            v-for="item in getItemsByType(s.type as 'keyboard' | 'mouse' | 'mousePad' | 'headphone')"
+                            :key="item.id">
+                            {{ item.name }}
                         </el-dropdown-item>
                     </el-dropdown-menu>
                 </template>
@@ -22,65 +24,68 @@ import { RouterView } from "vue-router";
 import { reactive, ref, onMounted } from "vue";
 import axios from "axios";
 
+// 定義數據接口
+interface Sort {
+    id: number;
+    name: string;
+    type: string; // 新增 type 用於對應產品類型
+}
 interface Product {
     id: number;
     name: string;
-    products: { id: number; name: string }[];
-    image: string;
+    price: number;
+    feature: string;
+    img: string;
 }
 
-const products = ref<Product[]>([])
+// 定義響應式數據
+const sort = ref<Sort[]>([]);
+const keyboard = ref<Product[]>([]);
+const headphone = ref<Product[]>([]);
+const mousePad = ref<Product[]>([]);
+const mouse = ref<Product[]>([]);
 
+// 產品數據映射
+const productMap = ref({
+    keyboard: keyboard.value,
+    mouse: mouse.value,
+    mousePad: mousePad.value,
+    headphone: headphone.value,
+});
+
+// 加載數據
 onMounted(async () => {
     try {
-        const res = await axios.get('/products/mousePads.json')
-        console.log('載入成功:', res.data)
-        products.value = res.data
+        const sortRes = await axios.get('/products/sort.json');
+        const keyboardRes = await axios.get('/products/keyboard.json');
+        const headphoneRes = await axios.get('/products/headphone.json');
+        const mousePadRes = await axios.get('/products/mousePad.json');
+        const mouseRes = await axios.get('/products/mouse.json');
+
+        sort.value = sortRes.data;
+        keyboard.value = keyboardRes.data;
+        headphone.value = headphoneRes.data;
+        mousePad.value = mousePadRes.data;
+        mouse.value = mouseRes.data;
+
+        // 更新 productMap
+        productMap.value = {
+            keyboard: keyboard.value,
+            mouse: mouse.value,
+            mousePad: mousePad.value,
+            headphone: headphone.value,
+        };
+
+        console.log('載入成功:', sort.value, productMap.value);
     } catch (error) {
-        console.error('載入失敗:', error)
+        console.error('載入失敗:', error);
     }
-})
+});
 
-// const sort = reactive([
-//     {
-//         id: 1, name: "鍵盤",
-//         products: [
-//             { id: 1, name: "鍵盤1" },
-//             { id: 2, name: "鍵盤2" },
-//             { id: 3, name: "鍵盤3" },
-//             { id: 4, name: "鍵盤4" },
-//         ]
-//     },
-//     {
-//         id: 2, name: "滑鼠",
-//         products: [
-//             { id: 1, name: "滑鼠1" },
-//             { id: 2, name: "滑鼠2" },
-//             { id: 3, name: "滑鼠3" },
-//             { id: 4, name: "滑鼠4" },
-//         ]
-//     },
-//     {
-//         id: 3, name: "耳機",
-//         products: [
-//             { id: 1, name: "耳機1" },
-//             { id: 2, name: "耳機2" },
-//             { id: 3, name: "耳機3" },
-//             { id: 4, name: "耳機4" },
-//         ]
-//     },
-//     {
-//         id: 4, name: "滑鼠墊",
-//         products: [
-//             { id: 1, name: "滑鼠墊1" },
-//             { id: 2, name: "滑鼠墊2" },
-//             { id: 3, name: "滑鼠墊3" },
-//             { id: 4, name: "滑鼠墊4" },
-//         ]
-//     }
-// ])
-
-// const products = reactive()
+// 根據 type 返回對應的產品數據
+const getItemsByType = (type: keyof typeof productMap.value) => {
+    return productMap.value[type] || [];
+};
 </script>
 
 <style lang="scss" scoped>
@@ -111,5 +116,12 @@ onMounted(async () => {
 .dropdown-menu {
     width: 60vw;
     margin: 0 20vw;
+}
+
+.el-tooltip__trigger {
+    :hover {
+        background-color: none;
+        color: none;
+    }
 }
 </style>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "鍵盤",
+        "type": "keyboard"
+    },
+    {
+        "id": 2,
+        "name": "滑鼠",
+        "type": "mouse"
+    },
+    {
+        "id": 3,
+        "name": "滑鼠墊",
+        "type": "mousePad"
+    },
+    {
+        "id": 4,
+        "name": "耳機",
+        "type": "headphone"
+    }
+]
