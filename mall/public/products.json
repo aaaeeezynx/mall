@@ -1,0 +1,220 @@
+[
+    {
+        "id": 1,
+        "product": "鍵盤",
+        "type": "keyboard",
+        "content": [
+            {
+                "id": 1,
+                "name": "羅技 Logitech ERGO K860 人體工學商務無線鍵盤 藍芽",
+                "price": 3990,
+                "feature": [
+                    "● 人體工學設計，減少壓力 、提高手腕支撐",
+                    "● 弧形設計、三層手托，使輸入姿勢更自然舒適",
+                    "● 可調整支架傾斜角度，在 0°、-4°、-7°間自由變換",
+                    "● 雙重連線，支援藍牙及Unifying™ 技術",
+                    "● 最高配對 3 台裝置，裝置間輕鬆切換"
+                ],
+                "img": "@/assets/images/logetch ERGO k860.webp"
+            },
+            {
+                "id": 2,
+                "name": "羅技 Logitech G PRO X TKL RAPID 磁性類比式鍵軸有線電競鍵盤",
+                "price": 5990,
+                "c": [
+                    "● 類比磁軸，12層設計",
+                    "● 提供穩固線性手感",
+                    "● 極速觸發，精準操控",
+                    "● G HUB自定義組合鍵"
+                ],
+                "img": "@/assets/images/Logitech G PRO X TKL RAPID.webp"
+            },
+            {
+                "id": 3,
+                "name": "羅技 Logitech G515 輕薄三模無線機械式 TKL 電競鍵盤 有線/2.4G/藍牙",
+                "price": 3290,
+                "feature": [
+                    "● 採用時尚、纖薄、無數字鍵台設計",
+                    "● GL 機械按鍵軸",
+                    "● 自訂您的玩樂個性"
+                ],
+                "img": "@/assets/images/Logitech G515.webp"
+            },
+            {
+                "id": 4,
+                "name": "羅技 Logitech MX Keys S Keyboard 無線智能鍵盤",
+                "price": 3390,
+                "feature": [
+                    "● 可充電鋰電池 (1500 mAh)",
+                    "● 使用預先定義的設定，完全充電最多可使用長達 10 天，背光關閉的情況下可使用長達 5 個月 1電池壽命視使用者及運算條件而異。",
+                    "● Easy-Switch 按鍵可連線到最多三個裝置，按下按鈕就能在裝置間切換",
+                    "● 可開啟背光的手部接近感應器",
+                    "● 可調整背光亮度的環境光線感應器",
+                    "● 可使用 USB-C 充電。完整充電後可持續使用 10 天，或在關閉背光情況下最高使用 5 個月 2電池壽命視使用者及運算條件而異。",
+                    "● 相容於具備羅技 Flow 功能的滑鼠",
+                    "● 10 公尺無線範圍"
+                ],
+                "img": "@/assets/images/Logitech MX Keys S Keyboard.webp"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "product": "滑鼠",
+        "type": "mouse",
+        "content": [
+            {
+                "id": 1,
+                "name": "羅技 Logitech M650 無線靜音滑鼠",
+                "price": 1090,
+                "feature": [
+                    "● 保持一貫的高水準",
+                    "● 升級產品使用體驗",
+                    "● 以藍牙配對，或以隨附的Logi Bolt 接收器隨插即用。",
+                    "● 自訂功能按鈕",
+                    "● 下載 Logitech Options 軟體，為滑鼠側鍵自訂喜愛的快捷功能。"
+                ],
+                "img": "@/assets/images/Logitech M650.webp"
+            },
+            {
+                "id": 2,
+                "name": "羅技 Logitech MX Master 3S 無線人體工學滑鼠 藍牙/2.4G",
+                "price": 3690,
+                "feature": [
+                    "● 相容於多種作業系統",
+                    "● 超高速 MAGSPEED 電磁滾輪",
+                    "● 玻璃表面追蹤感應器"
+                ],
+                "img": "@/assets/images/Logitech MX Master 3S.webp"
+            },
+            {
+                "id": 3,
+                "name": "Logitech 羅技 G502 X PLUS 炫光高效能 無線電競滑鼠 2.4G",
+                "price": 3990,
+                "feature": [
+                    "● G502 X PLUS 是傳奇 G502 系列的最新成員。其經由我們首款的 LIGHTFORCE 複合式開關、LIGHTSPEED 專業等級無線技術、LIGHTSYNC RGB、HERO 25K 感應器等進行全新改造。"
+                ],
+                "img": "@/assets/images/G502 X PLUS.webp"
+            },
+            {
+                "id": 4,
+                "name": "羅技 Logitech G Pro X SUPERLIGHT 2 LIGHTSPEED 無線輕量化電競滑鼠 2.4G",
+                "price": 5490,
+                "feature": [
+                    "● LIGHTSPEED無線連接最長可使用達 95 小時電池壽命",
+                    "● HERO 2感應器亞微米精確",
+                    "● LIGHTFORCE 微動複合光學X 機械式"
+                ],
+                "img": "@/assets/images/Logitech G Pro X SUPERLIGHT 2 LIGHTSPEED.webp"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "product": "滑鼠墊",
+        "type": "mousePad",
+        "content": [
+            {
+                "id": 1,
+                "name": "羅技 Logitech G 玩色大型滑鼠墊",
+                "price": 1190,
+                "feature": [
+                    "● 電競玩色大型滑鼠墊"
+                ],
+                "img": "@/assets/images/Logitech G colors mousepad.webp"
+            },
+            {
+                "id": 2,
+                "name": "羅技 Logitech G240 布質 滑鼠墊",
+                "price": 390,
+                "feature": [
+                    "● 經過精細調校的布質表面提供精確、一致的追蹤。橡膠底座讓滑鼠墊即使在激烈的遊戲過程中，也保持在定位。針對羅技 G 系列滑鼠進行最佳化處理的表面紋理，提供頂尖遊戲表現。"
+                ],
+                "img": "@/assets/images/Logitech G240 mousepad.webp"
+            },
+            {
+                "id": 3,
+                "name": "羅技 Logitech DESK MAT 布面桌面墊",
+                "price": 490,
+                "feature": [
+                    "● 配備防潑濺塗層的柔軟布面以濕布擦拭，最多2分鐘即可輕鬆擦拭乾淨。",
+                    "● 天然橡膠的止滑底座任何表面上都能有效防止滑動。",
+                    "● 兼具美型與耐用特性內層使用 100% 回收聚酯纖維，平縫設計防止邊緣磨損，可有效防止桌墊起皺和收縮。"
+                ],
+                "img": "@/assets/images/Logitech DESK MAT mousepad.webp"
+            },
+            {
+                "id": 4,
+                "name": "羅技 Logitech G440 硬質 滑鼠墊",
+                "price": 899,
+                "feature": [
+                    "● 低表面摩擦，克服慣性",
+                    "● 一致的表面紋理",
+                    "● 羅技G系列感應器的絕佳良配",
+                    "● 穩定的橡膠底座",
+                    "● 多層構造，複合強度"
+                ],
+                "img": "@/assets/images/Logitech G440 mousepad.webp"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "product": "耳機",
+        "type": "headphone",
+        "content": [
+            {
+                "id": 1,
+                "name": "羅技 Logitech G PRO X 2 LIGHTSPEED 無線三模電競耳機麥克風 2.4G/藍牙/有線",
+                "price": 6490,
+                "feature": [
+                    "● 50 公釐石墨烯單體",
+                    "● LIGHTSPEED無線技術",
+                    "● 配備柔軟耳墊與可旋轉耐用轉軸",
+                    "● 多種連線方式選項"
+                ],
+                "img": "/images/Logitech G PRO X 2 LIGHTSPEED.webp"
+            },
+            {
+                "id": 2,
+                "name": "羅技 Logitech G735 美型 RGB 無線電競耳麥 2.4G/藍牙/3.5mm有線",
+                "price": 4990,
+                "feature": [
+                    "● 按比例調整適合尺寸,重量更輕,頭帶舒適度高,佩戴尺寸範圍靈活",
+                    "● 專門設計的耳罩可旋轉和替換,適合不同耳型",
+                    "● 合併音訊 & 不被壓縮音訊,可同時連接到2個不同的設備",
+                    "● 可拆卸耳墊和可拆卸式麥克風",
+                    "● 柔和RGB照明",
+                    "● RGB開啟時電池使用時間為16小時,RGB關閉時電池使用時間為56小時,通過USB-C快速充電"
+                ],
+                "img": "/images/Logitech G735.webp"
+            },
+            {
+                "id": 3,
+                "name": "羅技 Logitech G435 lightspeed 無線電競耳機麥克風 2.4G/藍牙",
+                "price": 1790,
+                "feature": [
+                    "● 整體舒適性最佳化",
+                    "● 內建雙波束成形麥克風",
+                    "● 輕盈舒適的165公克重量",
+                    "● 藍牙無線",
+                    "● 長效電池使用",
+                    "● 高保真音效"
+                ],
+                "img": "/images/Logitech G435 lightspeed.webp"
+            },
+            {
+                "id": 4,
+                "name": "羅技 Logitech G335 輕盈 有線電競耳機麥克風",
+                "price": 1490,
+                "feature": [
+                    "● 240g輕盈舒適",
+                    "● 40公釐釹磁鐵單體，提供清脆、清晰的立體聲",
+                    "● 懸吊頭帶設計可分散重量並緩解壓力點",
+                    "● 柔軟透氣的記憶泡棉耳墊"
+                ],
+                "img": "/images/Logitech G335.webp"
+            }
+        ]
+    }
+]

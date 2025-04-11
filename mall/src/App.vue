@@ -8,7 +8,8 @@
         <el-container>
           <el-container>
             <el-main>
-              <Home />
+              <!-- <Home /> -->
+              <router-view></router-view>
             </el-main>
             <el-footer>
               <Footer />
